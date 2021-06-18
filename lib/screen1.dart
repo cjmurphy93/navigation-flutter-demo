@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'constants.dart';
 
 class Screen1 extends StatelessWidget {
   @override
@@ -9,8 +10,8 @@ class Screen1 extends StatelessWidget {
         title: Text('Screen 1'),
       ),
       body: Center(
-        child: RaisedButton(
-          color: Colors.red,
+        child: ElevatedButton(
+          style: raisedButtonStyle,
           child: Text('Go Forwards To Screen 2'),
           onPressed: () {},
         ),
